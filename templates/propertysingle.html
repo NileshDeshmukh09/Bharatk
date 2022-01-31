@@ -1,0 +1,599 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Bharat Kesharwani Real Estate</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'property/assets/img/favicon.png' %}" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'property/assets/vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+  <link href="{% static 'property/assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'property/assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'property/assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+    <!-- Bootstrap --> 
+    <link rel="stylesheet" href="{% static 'plugins/bootstrap/bootstrap.min.css' %}">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+    <!-- Animation -->
+    <link rel="stylesheet" href="{% static 'plugins/animate-css/animate.css' %}">
+    <!-- slick Carousel -->
+    <link rel="stylesheet" href="{% static 'plugins/slick/slick.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/slick/slick-theme.css' %}">
+    <!-- Colorbox -->
+    <link rel="stylesheet" href="{% static 'plugins/colorbox/colorbox.css' %}">
+
+  <!-- Template Main CSS File --> 
+  <link href="{% static 'property/assets/css/style.css' %}" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Property Search Section ======= -->
+  <div class="click-closed"></div>
+  <!--/ Form Search Star /-->
+  <div class="box-collapse">
+    <div class="title-box-d">
+      <h3 class="title-d">Search Property</h3>
+    </div>
+    <span class="close-box-collapse right-boxed bi bi-x"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label class="pb-2" for="Type">Keyword</label>
+              <input type="text" class="form-control form-control-lg form-control-a" placeholder="Keyword">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="Type">Type</label>
+              <select class="form-control form-select form-control-a" id="Type">
+                <option>All Type</option>
+                <option>For Rent</option>
+                <option>For Sale</option>
+                <option>Open House</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="city">City</label>
+              <select class="form-control form-select form-control-a" id="city">
+                <option>All City</option>
+                <option>Alabama</option>
+                <option>Arizona</option>
+                <option>California</option>
+                <option>Colorado</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bedrooms">Bedrooms</label>
+              <select class="form-control form-select form-control-a" id="bedrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="garages">Garages</label>
+              <select class="form-control form-select form-control-a" id="garages">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                <option>04</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="bathrooms">Bathrooms</label>
+              <select class="form-control form-select form-control-a" id="bathrooms">
+                <option>Any</option>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group mt-3">
+              <label class="pb-2" for="price">Min Price</label>
+              <select class="form-control form-select form-control-a" id="price">
+                <option>Unlimite</option>
+                <option>$50,000</option>
+                <option>$100,000</option>
+                <option>$150,000</option>
+                <option>$200,000</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b">Search Property</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div><!-- End Property Search Section -->
+
+  <!-- ======= Header/Navbar ======= -->
+  <div id="top-bar" class="top-bar">
+    <div class="container">
+      <div class="row">
+          <div class="col-lg-8 col-md-8">
+            <ul class="top-info text-center text-md-left">
+                <li><i class="fas fa-map-marker-alt"></i> <p class="info-text">Bharat Kesharwani Real Estate , Nagpur</p>
+                </li>
+            </ul>
+          </div>
+          <!--/ Top info end -->
+
+          <div class="col-lg-4 col-md-4 top-social text-center text-md-right">
+            <ul class="list-unstyled">
+                <li>
+                  <a title="Facebook" href="">
+                      <span class="social-icon"><i class="fab fa-facebook-f"></i></span>
+                  </a>
+                  <a title="Twitter" href="">
+                      <span class="social-icon"><i class="fab fa-twitter"></i></span>
+                  </a>
+                  <a title="Instagram" href="">
+                      <span class="social-icon"><i class="fab fa-instagram"></i></span>
+                  </a>
+                  <a title="Linkdin" href="">
+                      <span class="social-icon"><i class="fab fa-github"></i></span>
+                  </a>
+                </li>
+            </ul>
+          </div>
+          <!--/ Top social end -->
+      </div>
+      <!--/ Content row end -->
+    </div>
+    <!--/ Container end -->
+</div>
+<!--/ Topbar end -->
+<!-- Header start -->
+<header id="header" class="header-one">
+<div class="bg-white">
+<div class="container">
+  <div class="logo-area">
+      <div class="row align-items-center">
+        <div class="logo col-lg-3 text-center text-lg-left mb-3 mb-md-5 mb-lg-0">
+            <a class="d-block" href="/">
+              <img  src="{% static 'images\Logo.jpg' %}"  style="width:200px;height:200px;" alt="Bharat Keshwarni Real Estate">
+            </a>                 
+        </div><!-- logo end -->   
+
+        <div class="col-lg-9 header-right">
+            <ul class="top-info-box">
+              <li>
+                <div class="info-box">
+                  <div class="info-box-content">
+                      <p class="info-box-title">Call Us</p>
+                      <p class="info-box-subtitle"><a href="tel:(+9) 847-291-4353">(+91) 7498112598</a></p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="info-box">
+                  <div class="info-box-content">
+                      <p class="info-box-title">Email Us</p>
+                      <p class="info-box-subtitle"><a href="swaroops.cse@sbjit.edu.in">keshwarni@gmail.com</a></p>
+                  </div>
+                </div>
+              </li>
+             
+              <li class="header-get-a-quote">
+                <!-- <a class="btn btn-primary" href="contact.html">Get A Quote</a> -->
+              </li>
+            </ul><!-- Ul end -->
+        </div><!-- header right end -->
+      </div><!-- logo area end -->
+
+  </div><!-- Row end -->
+</div><!-- Container end -->
+</div>
+
+<div class="site-navigation">
+<div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+          <nav class="navbar navbar-expand-lg navbar-dark p-0">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div id="navbar-collapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav mr-auto">
+                 
+                  <li class="nav-item"><a class="nav-link" href="/">HOME</a></li>
+                  <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
+
+                  
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Properties<i class="fa fa-angle-down"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="">PLOT</a></li>
+                        <li><a href="">FLAT</a></li>
+                        <li><a href="">BUNGLOW</a></li>
+                        <li><a href="">APARTMENT</a></li>
+                        <li><a href="">HOUSE</a></li>
+                      </ul>
+                  </li>
+          
+                  
+                  
+                  <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                  <li class="nav-item"><a class="nav-link" href="terms.html">Terms and Condiitons</a></li>
+                  <li class="nav-item dropdown">
+                      <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">LOGIN <i class="fa fa-angle-down"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <!-- <li><a href="signuplogin.html">Register</a></li> -->
+                        <li><a href="signuplogin.html">Login-in</a></li>
+                        <li><a href="signuplogin.html">Sign-in</a></li>
+                        <!-- <li><a href="news-single.html">News Single</a></li> -->
+                      </ul>
+                  </li>
+          
+                  
+                </ul>
+            </div>
+          </nav>
+      </div>
+      <!--/ Col end -->
+    </div>
+    <!--/ Row end -->
+
+    <div class="nav-search">
+      <span id="search"><i class="fa fa-search"></i></span>
+    </div><!-- Search end -->
+
+    <div class="search-block" style="display: none;">
+      <label for="search-field" class="w-100 mb-0">
+        <input type="text" class="form-control" id="search-field" placeholder="Type what you want and enter">
+      </label>
+      <span class="search-close">&times;</span>
+    </div><!-- Site search end -->
+</div>
+<!--/ Container end -->
+
+</div>
+<!--/ Navigation end -->
+</header>                                     
+<!--/ Header end -->
+<div id="banner-area" class="banner-area" style="background-image:url{ % static'(images/banner/banner1.jpg)' %} ">
+<div class="banner-text">
+  <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="banner-heading">
+              <h1 class="banner-title">PROPERTIES</h1>
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb justify-content-center">
+                    <li class="breadcrumb-item"><a href="#">Home</a></li>
+                    <li class="breadcrumb-item"><a href="#">company</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">About Us</li>
+                  </ol>
+              </nav>
+            </div>
+        </div><!-- Col end -->
+      </div><!-- Row end -->
+  </div><!-- Container end -->
+</div><!-- Banner text end -->
+</div><!-- Banner area end -->
+
+  <main id="main">
+
+    <!-- ======= Intro Single ======= -->
+    <section class="intro-single">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-lg-8">
+            <div class="title-single-box">
+              <h1 class="title-single">{{products.name}}</h1>
+              <!-- <span class="color-text-a">Chicago, IL 606543</span> -->
+            </div>
+          </div>
+          <!-- <div class="col-md-12 col-lg-4">
+            <nav aria-label="breadcrumb" class="breadcrumb-box d-flex justify-content-lg-end">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="breadcrumb-item">
+                  <a href="property-grid.html">Properties</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  304 Blaster Up
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>End Intro Single -->
+
+    <!-- ======= Property Single ======= -->
+    <section class="property-single nav-arrow-b">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div id="property-single-carousel" class="swiper">
+              <div class="swiper-wrapper">
+                <div class="carousel-item-b swiper-slide">   
+                  <img src="{{products.img.url}}" alt="">
+                </div>
+                <div class="carousel-item-b swiper-slide"> 
+                  <img src="{{products.img.url}}" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="property-single-carousel-pagination carousel-pagination"></div>
+          </div>
+        </div>
+<!-- 
+        <div class="row">
+          <div class="col-sm-12">
+
+            <div class="row justify-content-between">
+              <div class="col-md-5 col-lg-4">
+                <div class="property-price d-flex justify-content-center foo">
+                  <div class="card-header-c d-flex">
+                    <div class="card-box-ico">
+                      <span class="bi bi-cash">Rs.</span>
+                    </div>
+                    <div class="card-title-c align-self-center">
+                      <h5 class="title-c">15000</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-summary">
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <div class="title-box-d section-t4">
+                        <h3 class="title-d">Quick Summary</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="summary-list">
+                    <ul class="list">
+                      <li class="d-flex justify-content-between">
+                        <strong>Property ID:</strong>
+                        <span>1134</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Location:</strong>
+                        <span>Chicago, IL 606543</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Property Type:</strong>
+                        <span>House</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Status:</strong>
+                        <span>Sale</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Area:</strong>
+                        <span>340m
+                          <sup>2</sup>
+                        </span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Beds:</strong>
+                        <span>4</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Baths:</strong>
+                        <span>2</span>
+                      </li>
+                      <li class="d-flex justify-content-between">
+                        <strong>Garage:</strong>
+                        <span>1</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div> -->
+              <div class="col-md-7 col-lg-7 section-md-t3">
+                <div class="row">
+                  <div class="col-sm-12">
+                    <div class="title-box-d">
+                      <h3 class="title-d">Property Description</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="property-description">
+                  <p class="description color-text-a">
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
+                    neque, auctor sit amet
+                    aliquam vel, ullamcorper sit amet ligula. Cras ultricies ligula sed magna dictum porta.
+                    Curabitur aliquet quam id dui posuere blandit. Mauris blandit aliquet elit, eget tincidunt
+                    nibh pulvinar quam id dui posuere blandit.
+                  </p>
+                  <p class="description color-text-a no-margin">
+                    Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget
+                    malesuada. Quisque velit nisi,
+                    pretium ut lacinia in, elementum id enim. Donec sollicitudin molestie malesuada.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-12 mt-3">
+              
+                <a href="orders"><button type="submit" class="btn btn-a">Send Message</button></a>
+              </div>
+            
+                <!-- <div class="row section-t3">
+                  <div class="col-sm-12">
+                    <div class="title-box-d">
+                      <h3 class="title-d">Amenities</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="amenities-list color-text-a">
+                  <ul class="list-a no-margin">
+                    <li>Balcony</li>
+                    <li>Outdoor Kitchen</li>
+                    <li>Cable Tv</li>
+                    <li>Deck</li>
+                    <li>Tennis Courts</li>
+                    <li>Internet</li>
+                    <li>Parking</li>
+                    <li>Sun Room</li>
+                    <li>Concrete Flooring</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <ul class="nav nav-pills-a nav-pills mb-3 section-t3" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-video-tab" data-bs-toggle="pill" href="#pills-video" role="tab" aria-controls="pills-video" aria-selected="true">Video</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-plans-tab" data-bs-toggle="pill" href="#pills-plans" role="tab" aria-controls="pills-plans" aria-selected="false">Floor Plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-map" aria-selected="false">Ubication</a>
+              </li>
+            </ul>
+           
+              <div class="col-md-12 col-lg-4">
+                <div class="property-contact">
+                  <form class="form-a">
+                    <div class="row">
+                      <div class="col-md-12 mb-1">
+                        <div class="form-group">
+                          <input type="text" class="form-control form-control-lg form-control-a" id="inputName" placeholder="Name *" required>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-1">
+                        <div class="form-group">
+                          <input type="email" class="form-control form-control-lg form-control-a" id="inputEmail1" placeholder="Email *" required>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mb-1">
+                        <div class="form-group">
+                          <textarea id="textMessage" class="form-control" placeholder="Comment *" name="message" cols="45" rows="8" required></textarea>
+                        </div>
+                      </div>
+                      <div class="col-md-12 mt-3">
+                        <button type="submit" class="btn btn-a">Send Message</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>End Property Single -->
+
+  </main><!-- End #main -->
+
+  <div style="background-image: url(images/slider-main/1.1.jpg); "></div>        <div style="background-image: url(images/slider-main/1.1.jpg); "></div>
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer bg-overlay">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-4 col-md-6 footer-widget footer-about"> 
+          <h3 class="widget-title">About Us</h3>
+          <img loading="lazy" width="200px" class="footer-logo"  src="{% static 'images\Logo.jpg' %}"  style="width:200px;height:200px;" alt="Bharat Kesharwani">
+          <p>We assist in finding solutions to help ensure the project runs smoothly, without delays, while helping to ensure the project is built to the highest possible standards.</p>
+          <div class="footer-social">
+            <ul>
+              <li><a href="" aria-label="Facebook"><i
+                    class="fab fa-facebook-f"></i></a></li>
+              <li><a href="" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              </li>
+              <li><a href="" aria-label="Instagram"><i
+                    class="fab fa-instagram"></i></a></li>
+              <li><a href="" aria-label="Github"><i class="fab fa-github"></i></a></li>
+            </ul>
+          </div><!-- Footer social end -->
+        </div><!-- Col end -->
+
+        <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
+          <h3 class="widget-title">Working Hours</h3>
+          <div class="working-hours">
+            We work 7 days a week, every day excluding major holidays. Contact us if you have an emergency, with our
+            Hotline and Contact form.
+            <br><br> Monday - Friday: <span class="text-right">10:00 - 16:00 </span>
+            <br> Saturday: <span class="text-right">12:00 - 15:00</span>
+            <br> Sunday and holidays: <span class="text-right">09:00 - 12:00</span>
+          </div>
+        </div><!-- Col end -->
+
+        
+      </div><!-- Row end -->
+    </div><!-- Container end -->
+  </div><!-- Footer main end -->
+
+  <div class="copyright">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="copyright-info text-center text-md-left">
+            <span>Copyright &copy; <script>
+                document.write(new Date().getFullYear())
+              </script>, Designed &amp; Developed by <a href="">G-15</a></span>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="footer-menu text-center text-md-right">
+            <ul class="list-unstyled">
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="faq.html">Terms and Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </div><!-- Row end -->
+
+      <div id="back-to-top" data-spy="affix" data-offset-top="10" class="back-to-top position-fixed">
+        <button class="btn btn-primary" title="Back to Top">
+          <i class="fa fa-angle-double-up"></i>
+        </button>
+      </div>
+
+    </div><!-- Container end -->
+  </div><!-- Copyright end -->
+</footer><!-- Footer end -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files --> 
+  <script src="{% static 'property/assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'property/assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'property/assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'property/assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
